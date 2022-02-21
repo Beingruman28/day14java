@@ -4,10 +4,10 @@ import java.io.*;
 
 public class ExceptionHandling2 {
 
-	 public static void findFile() {
+	  public static void findFile() {
 
-	       File newFile = new File("test.txt");
-	    try {
+	       try {
+			File newFile = new File("test.txt");
 			FileInputStream stream = new FileInputStream(newFile);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -19,3 +19,4 @@ public class ExceptionHandling2 {
 	    System.out.println("Print the exception");
 	  }
 	}
+
